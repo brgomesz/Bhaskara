@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+public class bhaskara {
+
+	public static void main(String[] args) {
+		double VA, VB, VC, DELTA, PrimeiraRaiz, SegundaRaiz;
+		
+		auxiliar_2 Calculadora = new auxiliar_2(); 
+		
+		VA = Double.parseDouble(JOptionPane.showInputDialog("Para calcular o delta, digite A "));
+		VB = Double.parseDouble(JOptionPane.showInputDialog("Digite B "));
+		VC = Double.parseDouble(JOptionPane.showInputDialog("Digite C "));
+		
+		DELTA = Calculadora.CalcularDelta(VA,VB,VC);
+		
+		JOptionPane.showMessageDialog(null, "DELTA é: " + DELTA);
+		
+		PrimeiraRaiz = Calculadora.CalculaX1(VA,VB,DELTA);
+		SegundaRaiz = Calculadora.CalculaX2(VA,VB,DELTA);
+		
+		JOptionPane.showMessageDialog(null, "Primeira Raiz: " + PrimeiraRaiz);
+		JOptionPane.showMessageDialog(null, "Segunda Raiz: " + SegundaRaiz);
+		
+	}
+
+	
+	
+}
