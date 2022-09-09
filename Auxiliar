@@ -1,0 +1,27 @@
+
+public class auxiliar_2 {
+
+	
+	public double CalcularDelta (double a, double b, double c) {
+		
+		return (b*b) -(4*a*c);
+	}
+	
+	
+	public double CalculaX1 (double a, double b, double d)
+	
+	{
+		
+		return (-b + Math.sqrt( d ))/2*a;
+		
+	}
+	
+	public double CalculaX2 (double a, double b, double d)
+	
+	{
+		
+		return (-b - Math.sqrt( d ))/2*a;
+		
+	}
+	
+}
